@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Apparel & Merchandise Design - Zuka</title>
+  <meta name="description" content="Apparel & Merchandise Design">
+
+  <script src="early-setup.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Syne:wght@600..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="scroll-progress"></div>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="logo" href="index.html">Zuka</a>
+
+      <nav class="menu" aria-label="Main">
+        <a href="index.html#work">
+          <span lang="en">← All work</span><span lang="bs">← Svi radovi</span>
+        </a>
+      </nav>
+
+      <div class="controls">
+        <div class="pill-group" aria-label="Language">
+          <button type="button" data-language="bs" aria-pressed="false">BS</button>
+          <button type="button" data-language="en" aria-pressed="true">EN</button>
+        </div>
+        <button type="button" id="theme-button" class="theme-button" aria-label="Dark / light mode">☾</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-page">
+    <div class="container">
+
+      <p class="project-category">
+        <span lang="en">Design</span><span lang="bs">Dizajn</span>
+      </p>
+
+      <h1 class="project-title">
+        <span lang="en">Apparel & Merchandise Design</span><span lang="bs">Dizajn promotivnih proizvoda</span>
+      </h1>
+
+      <p class="project-intro">
+        <span lang="en">A collection of apparel and merchandise designs, including custom T-shirt graphics and book-related visuals. The project explores how typography, imagery, and composition can transform everyday items into distinctive visual pieces. Each design balances creativity and clarity to create a cohesive, polished look.</span>
+        <span lang="bs">Kolekcija dizajna odjeće i različitih proizvoda, uključujući grafike za majice i vizuelna rješenja povezana s knjigama. Projekat istražuje kako se tipografija, fotografija i kompozicija mogu spojiti u upečatljiv vizuelni izraz. Svaki dizajn povezuje kreativnost i jasnoću kako bi se postigao skladan i profesionalan izgled.</span></p>
+
+      <div class="project-images">
+        <img src="photos/cocktail.png" alt="Photo 1" style="view-transition-name: project-1; margin-top: 10px; size: 50px;">
+        <img src="photos/majice.jpg" alt="Photo 2" style="view-transition-name: project-1; margin-top: 10px; size: 50px;">
+        <img src="photos/majice2.jpg" alt="Photo 3" style="view-transition-name: project-1; margin-top: 10px; size: 50px;">
+        <img src="photos/knjiga2.jpg" alt="Photo 4" style="view-transition-name: project-1; margin-top: 10px; size: 50px;">
+        <img src="photos/knjiga1.jpg" alt="Photo 5" style="view-transition-name: project-1; margin-top: 10px; size: 50px;">
+     </div>
+
+
+      <!-- Bottom links -->
+      <nav class="project-nav" aria-label="Project navigation">
+        <a href="project-5.html"><span lang="en">← Previous Project</span><span lang="bs">← Prethodni projekt</span></a>
+
+        <a href="index.html#work"><span lang="en">Go back to all projects →</span><span lang="bs">Nazad na projekte →</span></a>
+      </nav>
+
+    </div>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      &copy; <span id="year"></span> Mizi
+    </div>
+  </footer>
+
+  <script src="project.js"></script>
+</body>
+</html>
