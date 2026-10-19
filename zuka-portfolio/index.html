@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zuka – Photo designer</title>
+  <meta name="description" content="Portfolio of a photo designer: photography, design and digital work.">
+  <script src="early-setup.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Syne:wght@600..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="scroll-progress"></div>
+
+  <!-- === HEADER === -->
+  <header class="site-header">
+    <div class="container header-row">
+
+        <a class="logo" href="#home">Zuka</a>
+
+      <nav class="menu" aria-label="Main">
+        <a href="#work"><span lang="en">Work</span><span lang="bs">Radovi</span></a>
+        <a href="#about"><span lang="en">About</span><span lang="bs">O meni</span></a>
+        <a href="#contact"><span lang="en">Contact</span><span lang="bs">Kontakt</span></a>
+      </nav>
+
+      <div class="controls">
+        <div class="pill-group" aria-label="Language">
+          <button type="button" data-language="bs" aria-pressed="false">BS</button>
+          <button type="button" data-language="en" aria-pressed="true">EN</button>
+        </div>
+        <button type="button" id="theme-button" class="theme-button" aria-label="Dark / light mode">☾</button>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="home">
+
+    <!-- === HERO === -->
+    <section class="hero">
+      <div class="container">
+
+        <p class="hero-role">
+          <span lang="en">Photo designer</span><span lang="bs">Foto dizajner</span>
+        </p>
+
+        <h1 id="hero-name">Azur Terzic</h1>
+
+        <div class="hero-row">
+          <p class="hero-tagline">
+            <span lang="en">I turn photos into visuals people remember.</span>
+            <span lang="bs">Fotografije pretvaram u vizuale koji se pamte.</span>
+          </p>
+          <a class="button" href="#work">
+            <span lang="en">See the work</span><span lang="bs">Pogledaj radove</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- === WORK === -->
+    <section id="work">
+      <div class="container">
+
+        <div class="work-header">
+          <h2><span lang="en">Selected work</span><span lang="bs">Odabrani radovi</span></h2>
+          <div class="pill-group" id="filters" aria-label="Filter">
+            <button type="button" data-filter="all" aria-pressed="true">
+              <span lang="en">All</span><span lang="bs">Sve</span>
+            </button>
+            <button type="button" data-filter="photo" aria-pressed="false">
+              <span lang="en">Photography</span><span lang="bs">Fotografija</span>
+            </button>
+            <button type="button" data-filter="design" aria-pressed="false">
+              <span lang="en">Design</span><span lang="bs">Dizajn</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="gallery" id="gallery">
+          <!-- ITEM 1 -->
+          <a class="item" href="project-1.html" data-category="photo" style="aspect-ratio: 4 / 5;">
+            <img src="photos/to_si_ti_album_cover.jpg" alt="Sinan Sakic - To si ti" style="view-transition-name: project-1;">
+            <span class="caption">
+              <strong class="title"><span lang="en">Sinan Sakic Photography</span><span lang="bs">Sinan Sakic Fotografija</span></strong>
+              <span class="description"><span lang="en">Photography for the song "To si ti"</span><span lang="bs">Fotografija za pjesmu "To si ti"</span></span>
+            </span>
+          </a>
+
+          <!-- ITEM 2 -->
+          <button type="button" class="item" data-category="photo" style="aspect-ratio: 1 / 1;">
+            <img src="photos/criminal_cover.jpg" alt="Project title 2">
+            <span class="caption">
+              <strong class="title"><span lang="en">Jala Brat x Buba Corelli Cover</span><span lang="bs">Jala Brat x Buba Corelli Cover</span></strong>
+              <span class="description"><span lang="en">Cover for the song <a href="https://www.youtube.com/watch?v=x6fLkDdeqv8&list=RDx6fLkDdeqv8&start_radio=1">"Criminal" by Jala Brat x Buba Corelli x RAF Camora</a></span><span lang="bs">Cover za pjesmu<a href="https://www.youtube.com/watch?v=x6fLkDdeqv8&list=RDx6fLkDdeqv8&start_radio=1">"Criminal" by Jala Brat x Buba Corelli x RAF Camora</a></span></span>
+            </span>
+          </button>
+
+          <!-- ITEM 3 -->
+          <a class="item" href="project-2.html" data-category="design" style="aspect-ratio: 4 / 5;">
+            <img src="photos/bcard1.png" alt="Sinan Sakic - To si ti" style="view-transition-name: project-1;">
+            <span class="caption">
+              <strong class="title"><span lang="en">Business Cards</span><span lang="bs">Biznis Karte</span></strong>
+              <span class="description"><span lang="en">Businesses card desing for many local companies</span><span lang="bs">Dizajn biznis karti za mnoge lokalne tvrtke</span></span>
+            </span>
+          </a>
+
+          <!-- ITEM 4 -->
+          <a class="item" href="project-3.html" data-category="design" style="aspect-ratio: 4 / 5;">
+            <img src="photos/basketball_stats_cover.png" alt="Sinan Sakic - To si ti" style="view-transition-name: project-1;">
+            <span class="caption">
+              <strong class="title"><span lang="en">Sport Graphics</span><span lang="bs">Sportske grafike </span></strong>
+              <span class="description"><span lang="en">Businesses card desing for many local companies</span><span lang="bs">Dizajn biznis karti za mnoge lokalne tvrtke</span></span>
+            </span>
+          </a>
+
+          <!-- ITEM 5 -->
+          <a class="item" href="project-4.html" data-category="design" style="aspect-ratio: 4 / 5;">
+            <img src="photos/otvaranje_salona.png" alt="Sinan Sakic - To si ti" style="view-transition-name: project-1;">
+            <span class="caption">
+              <strong class="title"><span lang="en">Commercial & Advertising Design</span><span lang="bs">Komercijalni i reklamni dizajn</span></strong>
+            </span>
+          </a>
+
+          <!-- ITEM 6 -->
+          <a class="item" href="project-5.html" data-category="design" style="aspect-ratio: 4 / 5;">
+            <img src="photos/knjiga1.jpg" alt="Knjiga" style="view-transition-name: project-1;">
+            <span class="caption">
+              <strong class="title"><span lang="en">Apparel & Merchandise Design</span><span lang="bs">Dizajn odjeće i proizvoda</span></strong>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- === ABOUT ===-->
+    <section id="about">
+      <div class="container about-layout">
+        <div class="portrait">
+          <img src="photos/zuka.png" alt="Portrait of Friend Name">
+        </div>
+
+        <div>
+          <h2><span lang="en">About</span><span lang="bs">O meni</span></h2>
+          <p class="about-text">
+            <span lang="en">I’m a photo designer who combines photography with digital design. I work with brands, people and small businesses to create images that look good and say something clear.</span>
+            <span lang="bs">Ja sam foto dizajner i spajam fotografiju s digitalnim dizajnom. Radim s brendovima, ljudima i malim firmama na slikama koje lijepo izgledaju i jasno govore.</span>
+          </p>
+
+          <ul class="services">
+            <li><span lang="en">Photo editing and retouching</span><span lang="bs">Obrada i retuš fotografija</span></li>
+            <li><span lang="en">Visuals for brands and social media</span><span lang="bs">Vizuali za brendove i društvene mreže</span></li>
+            <li><span lang="en">Web and app screen design</span><span lang="bs">Dizajn web i aplikacijskih ekrana</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- === CONTACT === -->
+    <section id="contact">
+      <div class="container">
+
+        <h2><span lang="en">Let’s work together</span><span lang="bs">Hajde da radimo zajedno</span></h2>
+        <p class="contact-text">
+          <span lang="en">Tell me about your project. I usually reply within two days.</span>
+          <span lang="bs">Opiši mi svoj projekat. Obično odgovorim u roku od dva dana.</span>
+        </p>
+        <a class="email-link" href="mailto:azurterzic@gmail.com">azurterzic@gmail.com</a>
+
+        <p class="social-links">
+          <a href="https://instagram.com/zukat4_">Instagram</a>
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- === FOOTER === -->
+  <footer class="site-footer">
+    <div class="container">
+      &copy; <span id="year"></span> Mizi
+    </div>
+  </footer>
+
+
+  <!-- === LIGHTBOX ===  -->
+  <dialog id="lightbox">
+    <button type="button" id="lightbox-close" class="lightbox-button lightbox-close">✕</button>
+    <button type="button" id="lightbox-previous" class="lightbox-button lightbox-previous">‹</button>
+    <figure id="lightbox-content"></figure>
+    <button type="button" id="lightbox-next" class="lightbox-button lightbox-next">›</button>
+  </dialog>
+
+
+  <script src="main.js"></script>
+</body>
+</html>

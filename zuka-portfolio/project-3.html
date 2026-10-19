@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Basketball Graphics - Zuka</title>
+  <meta name="description" content="Photography for the song To si ti by Sinan Sakic.">
+
+  <script src="early-setup.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Syne:wght@600..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="scroll-progress"></div>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="logo" href="index.html">Zuka</a>
+
+      <nav class="menu" aria-label="Main">
+        <a href="index.html#work">
+          <span lang="en">← All work</span><span lang="bs">← Svi radovi</span>
+        </a>
+      </nav>
+
+      <div class="controls">
+        <div class="pill-group" aria-label="Language">
+          <button type="button" data-language="bs" aria-pressed="false">BS</button>
+          <button type="button" data-language="en" aria-pressed="true">EN</button>
+        </div>
+        <button type="button" id="theme-button" class="theme-button" aria-label="Dark / light mode">☾</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-page">
+    <div class="container">
+
+      <p class="project-category">
+        <span lang="en">Design</span><span lang="bs">Dizajn</span>
+      </p>
+
+      <h1 class="project-title">
+        <span lang="en">Basketball Graphics</span><span lang="bs">Košarkaške grafike</span>
+      </h1>
+
+      <p class="project-intro">
+        <span lang="en">A collection of sports graphics designed for basketball teams, featuring player statistics, Team of the Week selections, new player announcements, and other team-related visuals. Each design combines clear information, bold typography, and dynamic layouts to highlight players and celebrate team achievements.</span>
+        <span lang="bs">Kolekcija sportskih grafika za košarkaške timove, uključujući statistiku igrača, izbor najbolje petorke kola, najave novih igrača i druge vizuale vezane za tim. Svaki dizajn kombinuje pregledne informacije, izražajnu tipografiju i dinamične kompozicije kako bi istakao igrače i predstavio uspjehe ekipe.</span>
+      </p>
+
+      <div class="project-images">
+        <img src="photos/basketball_stats_cover.png" alt="" style="view-transition-name: project-1; margin-top: 10px; size: 50px;">
+        <img src="photos/riki_kapic.png" alt="Photo 3" style="view-transition-name: project-1; margin-top: 10px; size: 50px;">
+        <img src="photos/basketball_stats_cover2.png" alt="Photo 1" style="view-transition-name: project-1; margin-top: 10px; size: 50px;">
+        <img src="photos/petorka_kola.png" alt="Photo 2" style="view-transition-name: project-1; margin-top: 10px; size: 50px;">
+      </div>
+
+
+      <!-- Bottom links -->
+      <nav class="project-nav" aria-label="Project navigation">
+        <a href="index.html#work"><span lang="en">← All work</span><span lang="bs">← Svi radovi</span></a>
+
+        <!-- ✏️ EDIT: link to the next project page -->
+        <a href="project-4.html"><span lang="en">Next project →</span><span lang="bs">Sljedeći projekat →</span></a>
+      </nav>
+
+    </div>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      &copy; <span id="year"></span> Mizi
+    </div>
+  </footer>
+
+  <script src="project.js"></script>
+</body>
+</html>

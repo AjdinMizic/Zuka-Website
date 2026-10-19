@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Business Cards - Zuka</title>
+  <meta name="description" content="Photography for the song To si ti by Sinan Sakic.">
+
+  <script src="early-setup.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Syne:wght@600..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="scroll-progress"></div>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="logo" href="index.html">Zuka</a>
+
+      <nav class="menu" aria-label="Main">
+        <a href="index.html#work">
+          <span lang="en">← All work</span><span lang="bs">← Svi radovi</span>
+        </a>
+      </nav>
+
+      <div class="controls">
+        <div class="pill-group" aria-label="Language">
+          <button type="button" data-language="bs" aria-pressed="false">BS</button>
+          <button type="button" data-language="en" aria-pressed="true">EN</button>
+        </div>
+        <button type="button" id="theme-button" class="theme-button" aria-label="Dark / light mode">☾</button>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="project-page">
+    <div class="container">
+
+      <p class="project-category">
+        <span lang="en">Design</span><span lang="bs">Dizajn</span>
+      </p>
+
+      <h1 class="project-title">
+        <span lang="en">Business Cards</span><span lang="bs">Biznis Karte</span>
+      </h1>
+
+      <p class="project-intro">
+        <span lang="en">The goal of this project was to create a professional and memorable business card that reflects the brand’s identity. I focused on clean typography, balanced layouts, and carefully selected colors to create a design that feels modern, distinctive, and easy to recognize.</span>
+        <span lang="bs">Cilj ovog projekta bio je kreirati profesionalnu i upečatljivu vizitkartu koja odražava identitet brenda. Fokusirao sam se na čistu tipografiju, uravnotežen raspored elemenata i pažljivo odabrane boje kako bih postigao moderan, prepoznatljiv i vizuelno skladan dizajn.</span>
+      </p>
+
+      <div class="project-images">
+        <img src="photos/bcard1.png" alt="" style="view-transition-name: project-1; margin-top: 10px; size: 50px;">
+        <img src="photos/bcard2.png" alt="Photo 1" style="view-transition-name: project-1; margin-top: 10px; size: 50px;">
+        <img src="photos/bcard3.png" alt="Photo 2" style="view-transition-name: project-1; margin-top: 10px; size: 50px;">
+        <img src="photos/bcard4.png" alt="Photo 3" style="view-transition-name: project-1; margin-top: 10px; size: 50px;">
+      </div>
+
+
+      <!-- Bottom links -->
+      <nav class="project-nav" aria-label="Project navigation">
+        <a href="index.html#work"><span lang="en">← All work</span><span lang="bs">← Svi radovi</span></a>
+
+        <!-- ✏️ EDIT: link to the next project page -->
+        <a href="project-3.html"><span lang="en">Next project →</span><span lang="bs">Sljedeći projekat →</span></a>
+      </nav>
+
+    </div>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      &copy; <span id="year"></span> Mizi
+    </div>
+  </footer>
+
+  <script src="project.js"></script>
+</body>
+</html>
