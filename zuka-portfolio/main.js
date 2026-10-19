@@ -38,6 +38,7 @@ languageButtons.forEach(function (button) {
   });
 });
 
+setLanguage(htmlElement.getAttribute('lang'), false);
 
 /* ---------------------------------------------------------------
    2. DARK / LIGHT THEME BUTTON

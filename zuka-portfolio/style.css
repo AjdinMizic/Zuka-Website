@@ -693,3 +693,32 @@ dialog#lightbox::backdrop {
     animation: none;
   }
 }
+
+/* ---------------------------------------------------------------
+   GALLERY GRID (replaces the old column layout)
+   Every thumbnail has the same shape, rows line up neatly.
+--------------------------------------------------------------- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);    /* 3 equal columns on desktop */
+  gap: 16px;
+}
+
+.gallery .item {
+  aspect-ratio: 4 / 5 !important;           /* ✏️ EDIT: thumbnail shape (width / height). 1 / 1 = square, 3 / 4 = a bit taller */
+  margin: 0;                                /* the gap above handles the spacing */
+}
+
+/* Tablet: 2 columns */
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Phone: 1 column */
+@media (max-width: 560px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
