@@ -1,23 +1,7 @@
-/*
-  MAIN SCRIPT
-  You normally do NOT need to edit this file. Texts, images and links are all in index.html.
-
-  What this file does (in this order):
-    1. Language buttons (English / Bosnian)
-    2. Dark / light theme button
-    3. Big name animation in the hero
-    4. Gallery: placeholders for missing images, and the filter buttons
-    5. Scroll progress line and highlighted menu link
-*/
-
 var htmlElement = document.documentElement;
 
 
-/* ---------------------------------------------------------------
-   1. LANGUAGE BUTTONS
-   The texts are written twice in index.html (lang="en" and lang="bs").
-   The CSS shows the one that matches the <html lang="..."> value.
---------------------------------------------------------------- */
+/* 1. LANGUAGE BUTTONS */
 var languageButtons = document.querySelectorAll('[data-language]');
 
 function setLanguage(language, saveChoice) {
@@ -40,9 +24,7 @@ languageButtons.forEach(function (button) {
 
 setLanguage(htmlElement.getAttribute('lang'), false);
 
-/* ---------------------------------------------------------------
-   2. DARK / LIGHT THEME BUTTON
---------------------------------------------------------------- */
+/* 2. DARK / LIGHT THEME BUTTON */
 var themeButton = document.getElementById('theme-button');
 
 function setTheme(theme, saveChoice) {
@@ -63,10 +45,7 @@ themeButton.addEventListener('click', function () {
 setTheme(htmlElement.getAttribute('data-theme'), false);
 
 
-/* ---------------------------------------------------------------
-   3. BIG NAME ANIMATION
-   Splits the name in the hero into words so each word can slide in.
---------------------------------------------------------------- */
+/* 3. BIG NAME ANIMATION */
 var heroName = document.getElementById('hero-name');
 var nameWords = heroName.textContent.trim().split(' ');
 
@@ -87,9 +66,7 @@ nameWords.forEach(function (word, index) {
 document.getElementById('year').textContent = new Date().getFullYear();
 
 
-/* ---------------------------------------------------------------
-   4. GALLERY
---------------------------------------------------------------- */
+/* 4. GALLERY */
 var galleryItems = document.querySelectorAll('.item');
 var filterButtons = document.querySelectorAll('[data-filter]');
 
@@ -129,9 +106,7 @@ filterButtons.forEach(function (button) {
 });
 
 
-/* ---------------------------------------------------------------
-   5. SCROLL PROGRESS LINE + HIGHLIGHTED MENU LINK
---------------------------------------------------------------- */
+/* 5. SCROLL PROGRESS LINE + HIGHLIGHTED MENU LINK */
 var progressLine = document.getElementById('scroll-progress');
 
 function updateProgressLine() {
