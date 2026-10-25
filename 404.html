@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found - Zuka</title>
+  <script>
+    (function () {
+      var routes = {
+        "/sinan-sakic-cover": "/project-1.html",
+        "/youtube-thumbnails": "/project-2.html",
+        "/sports-graphic-design": "/project-3.html",
+        "/business-card-design": "/project-4.html",
+        "/portrait-photography": "/project-5.html",
+        "/apparel-merchandise-design": "/project-6.html"
+      };
+      var path = window.location.pathname;
+      var section = { "/work": "work", "/about": "about", "/contact": "contact" }[path];
+      var file = routes[path];
+      if (section || file) {
+        fetch(file || "/index.html").then(function (response) {
+          if (!response.ok) throw new Error("Page not found");
+          return response.text();
+        }).then(function (markup) {
+          document.open();
+          document.write(markup);
+          document.close();
+        }).catch(function () {
+          window.location.replace("/");
+        });
+      } else {
+        window.location.replace("/");
+      }
+    })();
+  </script>
+</head>
+<body></body>
+</html>

@@ -85,3 +85,19 @@ function updateProgressLine() {
 
 window.addEventListener('scroll', updateProgressLine, { passive: true });
 updateProgressLine();
+
+/* Keep a real HTML file target for static preview servers, then show its clean URL. */
+(function () {
+  var cleanPaths = {
+    "/project-1.html": "/sinan-sakic-cover",
+    "/project-2.html": "/youtube-thumbnails",
+    "/project-3.html": "/sports-graphic-design",
+    "/project-4.html": "/business-card-design",
+    "/project-5.html": "/portrait-photography",
+    "/project-6.html": "/apparel-merchandise-design"
+  };
+  var cleanPath = cleanPaths[window.location.pathname];
+  if (cleanPath) {
+    window.history.replaceState({}, "", cleanPath);
+  }
+})();

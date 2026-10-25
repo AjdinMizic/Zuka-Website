@@ -5,12 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Zuka – Designer</title>
   <meta name="description" content="Portfolio of a photo designer: photography, design and digital work.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://azurterzic.com/">
+  <meta property="og:title" content="ZT4 – Photo designer">
+  <meta property="og:description" content="Photography, design and digital work by Azur Terzic.">
+  <meta property="og:image" content="https://azurterzic.com/photos/zukapreview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   <script src="early-setup.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Syne:wght@600..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="photos/zt4-icon.svg">
+  <link rel="icon" type="image/png" href="photos/zt4-icon.png">
+  <link rel="shortcut icon" href="photos/favicon.ico">
 </head>
 
 <body>
@@ -23,9 +34,9 @@
         <a class="logo" href="/">Zuka</a>
 
       <nav class="menu" aria-label="Main">
-        <a href="#work"><span lang="en">Work</span><span lang="bs">Radovi</span></a>
-        <a href="#about"><span lang="en">About</span><span lang="bs">O meni</span></a>
-        <a href="#contact"><span lang="en">Contact</span><span lang="bs">Kontakt</span></a>
+        <a href="/work" data-route="work"><span lang="en">Work</span><span lang="bs">Radovi</span></a>
+        <a href="/about" data-route="about"><span lang="en">About</span><span lang="bs">O meni</span></a>
+        <a href="/contact" data-route="contact"><span lang="en">Contact</span><span lang="bs">Kontakt</span></a>
       </nav>
 
       <div class="controls">
@@ -85,7 +96,7 @@
 
         <div class="gallery" id="gallery">
           <!-- ITEM 1 -->
-          <a class="item" href="project-1.html" data-category="photo" style="aspect-ratio: 4 / 5;">
+          <a class="item" href="/project-1.html" data-category="photo" style="aspect-ratio: 4 / 5;">
             <img src="photos/to_si_ti_album_cover.jpg" alt="Project title 1" style="view-transition-name: project-1;">
             <span class="caption">
               <strong class="title"><span lang="en">Sinan Sakić — Photo Series</span><span lang="bs">Fotografije Albuma Sinan Sakića</span></strong>
@@ -93,15 +104,15 @@
           </a>
 
           <!-- ITEM 2 -->
-          <a class="item" href="project-2.html" data-category="design" style="aspect-ratio: 4 / 5;">
-            <img src="photos/criminal_cover.jpg" alt="Project title 2" style="view-transition-name: project-1;">
+          <a class="item" href="/project-2.html" data-category="design" style="aspect-ratio: 4 / 5;">
+            <img src="photos/strength_thumbnail-Picsart-AiImageEnhancer.png" alt="Project title 2" style="view-transition-name: project-1;">
             <span class="caption">
-              <strong class="title"><span lang="en">Album Cover Design</span><span lang="bs">Dizajn cover albuma</span></strong>
+              <strong class="title"><span lang="en">YouTube Thumbnails</span><span lang="bs">YouTube Thumbnailovi</span></strong>
             </span>
           </a>
 
           <!-- ITEM 3 -->
-          <a class="item" href="project-3.html" data-category="design" style="aspect-ratio: 4 / 5;">
+          <a class="item" href="/project-3.html" data-category="design" style="aspect-ratio: 4 / 5;">
             <img src="photos/musa.png" alt="Project title 3" style="view-transition-name: project-1;">
             <span class="caption">
               <strong class="title"><span lang="en">Sports Graphic Design</span><span lang="bs">Sportski grafički dizajn</span></strong>
@@ -109,7 +120,7 @@
           </a>
 
           <!-- ITEM 4 -->
-          <a class="item" href="project-4.html" data-category="design" style="aspect-ratio: 4 / 5;">
+          <a class="item" href="/project-4.html" data-category="design" style="aspect-ratio: 4 / 5;">
             <img src="photos/bcard2.png" alt="Project title 4" style="view-transition-name: project-1;">
             <span class="caption">
               <strong class="title"><span lang="en">Business Card Design</span><span lang="bs">Dizajn vizitkarti</span></strong>
@@ -117,7 +128,7 @@
           </a>
 
           <!-- ITEM 5 -->
-          <a class="item" href="project-5.html" data-category="photo" style="aspect-ratio: 4 / 5;">
+          <a class="item" href="/project-5.html" data-category="photo" style="aspect-ratio: 4 / 5;">
             <img src="photos/kuhanje.jpg" alt="Project title 5" style="view-transition-name: project-1;">
             <span class="caption">
               <strong class="title"><span lang="en">Portrait Photography</span><span lang="bs">Portretna fotografija</span></strong>
@@ -125,7 +136,7 @@
           </a>
 
           <!-- ITEM 6 -->
-          <a class="item" href="project-6.html" data-category="design" style="aspect-ratio: 4 / 5;">
+          <a class="item" href="/project-6.html" data-category="design" style="aspect-ratio: 4 / 5;">
             <img src="photos/knjiga1.jpg" alt="Project title 6" style="view-transition-name: project-1;">
             <span class="caption">
               <strong class="title"><span lang="en">Apparel & Merchandise</span><span lang="bs">Dizajn promotivnih proizvoda</span></strong>

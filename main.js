@@ -136,3 +136,56 @@ if ('IntersectionObserver' in window) {
     sectionWatcher.observe(section);
   });
 }
+
+
+(() => {
+  const sections = ["work", "about", "contact"];
+  const validPaths = ["/", ...sections.map(name => `/${name}`)];
+
+  function getPath() {
+    return window.location.pathname.replace(/\/+$/, "") || "/";
+  }
+
+  function navigate(path, addHistory = true) {
+    if (!validPaths.includes(path)) return;
+
+    if (addHistory && getPath() !== path) {
+      history.pushState({}, "", path);
+    }
+
+    const sectionName = path.slice(1);
+
+    if (!sectionName) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+
+    document.getElementById(sectionName)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }
+
+  document.addEventListener("click", event => {
+    const link = event.target.closest("a[data-route]");
+    if (!link || event.ctrlKey || event.metaKey ||
+        event.shiftKey || event.altKey || event.button !== 0) {
+      return;
+    }
+
+    event.preventDefault();
+    navigate(`/${link.dataset.route}`);
+  });
+
+  window.addEventListener("popstate", () => {
+    navigate(getPath(), false);
+  });
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const path = getPath();
+
+    if (validPaths.includes(path) && path !== "/") {
+      navigate(path, false);
+    }
+  });
+})();
